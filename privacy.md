@@ -95,7 +95,7 @@ We may also share information if required by law (such as in response to a valid
 ## 5. Data retention
 
 - **Active accounts:** We retain your account data and practice content for as long as your account is active.
-- **Deleted accounts:** When you delete your account through the in-app deletion flow, we remove your data from Supabase, Mux, and AWS S3, and we delete your authentication record, within **30 days**.
+- **Deleted accounts:** When you delete your account through the in-app deletion flow, your account data and content are removed from our systems shortly after you confirm deletion. Visibility to other users (in feeds, leaderboards, and crew lists) is removed within seconds. Media files stored with Mux and AWS S3 are deleted by automated cleanup processes shortly thereafter. Limited records may be retained for reasonable periods where required for legal, security, or fraud-prevention purposes.
 - **Analytics data:** PostHog retains aggregated analytics events according to its standard retention policy.
 - **Security logs:** Abuse-detection logs are retained for a reasonable period to detect patterns of misuse.
 
