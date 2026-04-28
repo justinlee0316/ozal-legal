@@ -25,18 +25,19 @@ We collect the following categories of information:
 
 **Account information**
 - Email address (used for authentication)
-- Display name and username
+- Display name
 - Password (stored in encrypted form by our authentication provider)
 - Profile photo (if you choose to upload one)
+- Optional profile details you provide (handicap, gender, home practice facility, club bag)
 
 **Practice content you create**
-- Practice videos ("clips") you record or upload
-- Voice notes you record (private to your account; not shared with other users)
-- Practice metadata: club type, location type (Range, Simulator, or Home), facility name, swing notes, captions, and dates
+- Practice videos and AI-detected swing clips you record
+- Voice notes you record (private to your account)
+- Practice metadata: club selections, session notes, dates, location type
 - AI-generated transcripts and summaries of your voice notes
 
 **Location information**
-- When you tap "Find nearby facilities" while logging a session, we request your device's approximate location through iOS in order to search for golf facilities near you. Your coordinates are sent to Google Places for the search and are **not stored** on our servers. Location access is requested only when you use this feature, never in the background, and never on app startup.
+- When you tap "Find nearby facilities" while setting up your home facility or logging a session, we request your device's approximate location through iOS in order to search for golf facilities near you. Your coordinates are sent to Google Places for the search and are **not stored** on our servers. Location access is requested only when you use this feature, never in the background, and never on app startup.
 
 **Device and usage information**
 - Push notification token (used to deliver notifications to your device)
@@ -55,9 +56,9 @@ We do **not** collect: payment information, phone numbers, dates of birth, conta
 We use the information we collect to:
 
 - Provide and operate the App, including authentication, content storage, and playback
+- Detect swings within your practice videos and organize them by club
 - Generate AI summaries of your voice notes (see Section 4 for how this works)
-- Display your shared content (clips submitted to challenges or appearing on leaderboards) to other users where you have chosen to share
-- Send you push notifications related to your practice activity, crews, and challenges
+- Send you push notifications related to your own practice activity (such as practice reminders or when AI summaries are ready)
 - Search for golf facilities near you when you use the "Find nearby facilities" feature
 - Understand how the App is used so we can improve it
 - Detect, prevent, and respond to abuse, fraud, and security incidents
@@ -81,12 +82,7 @@ We share your information only with the third-party service providers we use to 
 | OpenAI | Voice note transcripts | AI summary generation (Whisper transcription + GPT-4o-mini summarization) | Governed by OpenAI's API privacy terms |
 | Apple Push Notification Service | Push notification tokens and messages | Push notification delivery | Governed by Apple's privacy policy |
 
-Other users of OZAL can see content you choose to share publicly within the App, including:
-- Your display name, username, and profile photo
-- Clips you submit to challenges
-- Your appearance on leaderboards
-
-Voice notes are **private to your account** and are not shared with other users, including members of your crew.
+**Sharing through your device.** OZAL allows you to share your own practice content (such as a session summary card or a swing clip) using your device's standard share sheet. When you choose to share, the content is sent to the destination app or contact you select (for example, Instagram, iMessage, or email). What happens to that content after it leaves OZAL is governed by the destination app's policies, not ours. OZAL does not have an in-app social feed where other users can see your content.
 
 We may also share information if required by law (such as in response to a valid subpoena or court order), or to protect the rights, safety, or property of OZAL, our users, or the public.
 
@@ -95,7 +91,7 @@ We may also share information if required by law (such as in response to a valid
 ## 5. Data retention
 
 - **Active accounts:** We retain your account data and practice content for as long as your account is active.
-- **Deleted accounts:** When you delete your account through the in-app deletion flow, your account data and content are removed from our systems shortly after you confirm deletion. Visibility to other users (in feeds, leaderboards, and crew lists) is removed within seconds. Media files stored with Mux and AWS S3 are deleted by automated cleanup processes shortly thereafter. Limited records may be retained for reasonable periods where required for legal, security, or fraud-prevention purposes.
+- **Deleted accounts:** When you delete your account through the in-app deletion flow, your account data and content are removed from our systems shortly after you confirm deletion. Media files stored with Mux and AWS S3 are deleted by automated cleanup processes shortly thereafter. Limited records may be retained for reasonable periods where required for legal, security, or fraud-prevention purposes.
 - **Analytics data:** PostHog retains aggregated analytics events according to its standard retention policy.
 - **Security logs:** Abuse-detection logs are retained for a reasonable period to detect patterns of misuse.
 
@@ -105,7 +101,7 @@ We may also share information if required by law (such as in response to a valid
 
 **Access and correction.** You can view and update most of your account information directly in the App through your profile settings.
 
-**Account deletion.** You can delete your account at any time through the in-app account deletion flow in Settings. This permanently removes your videos, voice notes, profile photo, and account data from our systems within 30 days.
+**Account deletion.** You can delete your account at any time through the in-app account deletion flow in Settings. Your videos, voice notes, profile photo, and account data are removed from our systems shortly after you confirm deletion.
 
 **Data export.** If you would like a copy of your data, email **privacy@ozal.golf** and we will provide it within a reasonable time frame.
 
